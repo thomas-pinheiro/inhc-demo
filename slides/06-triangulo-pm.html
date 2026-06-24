@@ -1,0 +1,40 @@
+<section class="slide" data-title="Triângulo — Viabilidade (PM)"
+  data-notes="Na dimensão de viabilidade, o principal risco é organizacional, não técnico: o módulo de manutenção só funciona se a equipe de manutenção estiver comprometida. Nenhuma solução técnica resolve esse problema — é uma questão de gestão.">
+<style>
+.tri{display:flex;flex-direction:column;gap:9px;margin-top:10px}
+.tri-hdr{display:grid;grid-template-columns:1fr 1fr 1.1fr;gap:10px;margin-bottom:2px}
+.tri-hdr span{font-size:11px;font-weight:900;letter-spacing:1.2px;text-transform:uppercase;padding:0 2px}
+.tri-row{display:grid;grid-template-columns:1fr 1fr 1.1fr;gap:10px;align-items:start}
+.tc{border-radius:13px;padding:12px 15px;font-size:13.5px;font-weight:600;line-height:1.4}
+.tc.pos{background:#F4FBF6;border:1.5px solid #CDEBD8;color:#1B5E38}
+.tc.neg{background:#FCF5F5;border:1.5px solid #F3D9DB;color:#8B2222}
+.tc.sol{background:#FAFAFF;border:1.5px solid var(--indigo);color:var(--ink)}
+.tc.sol.risk{background:#FCF5F5;border-color:var(--red);color:#8B2222}
+</style>
+  <div class="stage top">
+    <span class="eyebrow"><span class="dot"></span> Triângulo de Ouro</span>
+    <h2 class="title">Viabilidade — PM</h2>
+    <div class="tri-hdr">
+      <span style="color:var(--green-dk)">✓ Positivos</span>
+      <span style="color:#B23036">✗ Riscos</span>
+      <span style="color:var(--indigo-dk)">→ Solução proposta</span>
+    </div>
+    <div class="tri">
+      <div class="tri-row">
+        <div class="tc pos">A solução beneficia diretamente a gestão do campus, com <strong>potencial de apoio institucional</strong>.</div>
+        <div class="tc neg">Quem será responsável por <strong>manter salas e horários atualizados</strong> no sistema?</div>
+        <div class="tc sol">A <strong>coordenação + portaria assumem</strong> a responsabilidade de atualização. Uso de salas condicionado ao sistema.</div>
+      </div>
+      <div class="tri-row">
+        <div class="tc pos">Reduz conflitos de agenda e <strong>centraliza informações</strong> hoje fragmentadas em e-mails, WhatsApp e papéis.</div>
+        <div class="tc neg">O setor de manutenção precisa estar comprometido para responder. <strong>Sem isso, o módulo perde sentido.</strong></div>
+        <div class="tc sol risk"><strong>⚠ Risco organizacional sem solução técnica.</strong> O sucesso depende de engajamento institucional — não de tecnologia.</div>
+      </div>
+      <div class="tri-row">
+        <div class="tc pos">O uso de salas vagas pode ser <strong>potencializado</strong> com visibilidade centralizada da disponibilidade.</div>
+        <div class="tc neg">O sistema pode cair em desuso se não houver <strong>atualização constante</strong> e resposta ágil da manutenção.</div>
+        <div class="tc sol"><strong>Definir responsáveis claros</strong> (coordenação, portaria, manutenção) como condição prévia ao lançamento.</div>
+      </div>
+    </div>
+  </div>
+</section>

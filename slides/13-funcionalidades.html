@@ -1,0 +1,42 @@
+<section class="slide blk-ia" data-title="Funcionalidades do MVP"
+  data-notes="O MVP tem 9 funcionalidades organizadas em três grupos: Reservas (calendário, reserva, gerenciamento), Problemas (reporte, acompanhamento, painel de manutenção) e Administração (gerenciar salas, usuários e autenticação). Funcionalidades mais complexas ficam para versões futuras.">
+<style>
+.flist{list-style:none;display:flex;flex-direction:column;gap:5px;margin-top:8px}
+.flist li{font-size:13px;font-weight:600;color:var(--muted);display:flex;gap:7px;line-height:1.35;align-items:flex-start}
+.flist li span.dot{color:var(--green);flex-shrink:0;font-size:16px;line-height:1}
+</style>
+  <div class="stage top">
+    <span class="eyebrow"><span class="dot"></span> MVP</span>
+    <h2 class="title">Funcionalidades do App</h2>
+    <div class="grid c3" style="margin-top:16px;gap:14px">
+      <div class="card">
+        <span class="ico">📅</span>
+        <h3>Salas &amp; Reservas</h3>
+        <ul class="flist">
+          <li><span class="dot">●</span><span>Calendário semanal com cores: livre / ocupado / com problema</span></li>
+          <li><span class="dot">●</span><span>Reserva de sala com validação automática de conflitos de horário</span></li>
+          <li><span class="dot">●</span><span>Editar e cancelar reservas próprias dentro do prazo permitido</span></li>
+        </ul>
+      </div>
+      <div class="card">
+        <span class="ico">🚨</span>
+        <h3>Problemas &amp; Manutenção</h3>
+        <ul class="flist">
+          <li><span class="dot">●</span><span>Reportar problema com local, categoria, descrição e foto (opcional)</span></li>
+          <li><span class="dot">●</span><span>Acompanhar status dos chamados: aberto / em andamento / resolvido</span></li>
+          <li><span class="dot">●</span><span>Painel do técnico: lista por urgência + atualização de status com notificação</span></li>
+        </ul>
+      </div>
+      <div class="card">
+        <span class="ico">⚙️</span>
+        <h3>Administração</h3>
+        <ul class="flist">
+          <li><span class="dot">●</span><span>Gerenciar salas: cadastrar, editar e remover (pré-requisito do calendário)</span></li>
+          <li><span class="dot">●</span><span>Gerenciar usuários: cadastrar e definir perfis de acesso</span></li>
+          <li><span class="dot">●</span><span>Login com matrícula e senha · 5 perfis: aluno, professor, coordenador, manutenção, admin</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="note" style="margin-top:14px"><span class="b">Roadmap futuro</span><span>Mapa interativo do campus · Atualização em tempo real · QR Code por sala · Relatórios gerenciais · Integração com grade horária do IFAL</span></div>
+  </div>
+</section>

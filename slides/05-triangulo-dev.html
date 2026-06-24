@@ -1,0 +1,39 @@
+<section class="slide" data-title="Triângulo — Capacidade Técnica (DEV)"
+  data-notes="Na dimensão técnica, os pontos positivos são a simplicidade do formulário de chamados e do calendário CRUD. Os riscos são a integração com grade real e inexperiência com deploy. As soluções são uma V1 manual e buscar apoio de professores.">
+<style>
+.tri{display:flex;flex-direction:column;gap:9px;margin-top:10px}
+.tri-hdr{display:grid;grid-template-columns:1fr 1fr 1.1fr;gap:10px;margin-bottom:2px}
+.tri-hdr span{font-size:11px;font-weight:900;letter-spacing:1.2px;text-transform:uppercase;padding:0 2px}
+.tri-row{display:grid;grid-template-columns:1fr 1fr 1.1fr;gap:10px;align-items:start}
+.tc{border-radius:13px;padding:12px 15px;font-size:13.5px;font-weight:600;line-height:1.4}
+.tc.pos{background:#F4FBF6;border:1.5px solid #CDEBD8;color:#1B5E38}
+.tc.neg{background:#FCF5F5;border:1.5px solid #F3D9DB;color:#8B2222}
+.tc.sol{background:#FAFAFF;border:1.5px solid var(--indigo);color:var(--ink)}
+</style>
+  <div class="stage top">
+    <span class="eyebrow"><span class="dot"></span> Triângulo de Ouro</span>
+    <h2 class="title">Capacidade Técnica — DEV</h2>
+    <div class="tri-hdr">
+      <span style="color:var(--green-dk)">✓ Positivos</span>
+      <span style="color:#B23036">✗ Riscos</span>
+      <span style="color:var(--indigo-dk)">→ Solução proposta</span>
+    </div>
+    <div class="tri">
+      <div class="tri-row">
+        <div class="tc pos">Formulário de chamado é tecnicamente <strong>simples</strong> e pode ser implementado com as tecnologias que o time já conhece.</div>
+        <div class="tc neg">Integração com a <strong>grade horária real</strong> do campus é complexa e depende de dados externos da instituição.</div>
+        <div class="tc sol"><strong>V1 com inserção manual</strong> das salas e horários pela coordenação; integração com grade fica para versões futuras.</div>
+      </div>
+      <div class="tri-row">
+        <div class="tc pos">Calendário de disponibilidade é essencialmente um <strong>CRUD básico</strong> com visualização — acessível para o time.</div>
+        <div class="tc neg">Atualização em <strong>tempo real</strong> da disponibilidade das salas exige infraestrutura adicional (ex: WebSockets).</div>
+        <div class="tc sol">Implementar real-time em versões futuras. Na <strong>V1, usar polling simples</strong> com atualização periódica.</div>
+      </div>
+      <div class="tri-row">
+        <div class="tc pos">A equipe pode <strong>convidar colaboradores externos</strong> — colegas, professores e monitores — para apoiar o desenvolvimento.</div>
+        <div class="tc neg">A equipe tem <strong>pouca experiência com deploy</strong> e infraestrutura de aplicações web em ambiente de produção.</div>
+        <div class="tc sol">Buscar <strong>apoio de professores ou monitores</strong> para viabilizar o deploy institucional e a manutenção do servidor.</div>
+      </div>
+    </div>
+  </div>
+</section>

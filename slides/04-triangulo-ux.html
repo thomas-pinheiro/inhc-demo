@@ -1,0 +1,39 @@
+<section class="slide" data-title="Triângulo — Desejabilidade (UX)"
+  data-notes="Na dimensão UX, os pontos positivos são claros: há demanda real. Os riscos são resistência ao login e desconfiança de que o sistema realmente resolve. As soluções passam pela portaria como canal de apoio e pelo status visível dos chamados.">
+<style>
+.tri{display:flex;flex-direction:column;gap:9px;margin-top:10px}
+.tri-hdr{display:grid;grid-template-columns:1fr 1fr 1.1fr;gap:10px;margin-bottom:2px}
+.tri-hdr span{font-size:11px;font-weight:900;letter-spacing:1.2px;text-transform:uppercase;padding:0 2px}
+.tri-row{display:grid;grid-template-columns:1fr 1fr 1.1fr;gap:10px;align-items:start}
+.tc{border-radius:13px;padding:12px 15px;font-size:13.5px;font-weight:600;line-height:1.4}
+.tc.pos{background:#F4FBF6;border:1.5px solid #CDEBD8;color:#1B5E38}
+.tc.neg{background:#FCF5F5;border:1.5px solid #F3D9DB;color:#8B2222}
+.tc.sol{background:#FAFAFF;border:1.5px solid var(--indigo);color:var(--ink)}
+</style>
+  <div class="stage top">
+    <span class="eyebrow"><span class="dot"></span> Triângulo de Ouro</span>
+    <h2 class="title">Desejabilidade — UX</h2>
+    <div class="tri-hdr">
+      <span style="color:var(--green-dk)">✓ Positivos</span>
+      <span style="color:#B23036">✗ Riscos</span>
+      <span style="color:var(--indigo-dk)">→ Solução proposta</span>
+    </div>
+    <div class="tri">
+      <div class="tri-row">
+        <div class="tc pos">Professores e alunos sofrem com salas ocupadas sem aviso e <strong>querem uma solução</strong>.</div>
+        <div class="tc neg">Resistência ao login obrigatório — especialmente alunos do noturno que não acessam o campus durante o dia.</div>
+        <div class="tc sol">Sistema requer login. A <strong>portaria atua como apoio presencial</strong> para quem não tiver acesso no momento.</div>
+      </div>
+      <div class="tri-row">
+        <div class="tc pos">Problemas de infraestrutura sem registro <strong>pioram com o tempo</strong> e geram custo e insatisfação crescentes.</div>
+        <div class="tc neg">Alunos podem não confiar que o problema será resolvido e <strong>abandonar o sistema</strong> após a 1ª experiência negativa.</div>
+        <div class="tc sol">Exibir o <strong>status do chamado</strong> (aberto / em andamento / resolvido) de forma visível para o solicitante após login.</div>
+      </div>
+      <div class="tri-row">
+        <div class="tc pos">Há demanda real por um canal que <strong>feche o ciclo</strong>: reporte → análise → resolução → confirmação.</div>
+        <div class="tc neg">O sistema pode cair em desuso se a manutenção não responder com agilidade — <strong>minando a confiança</strong> de todos.</div>
+        <div class="tc sol">Mostrar <strong>histórico de chamados resolvidos</strong> e gerar relatório de prazos atrasados para a gestão.</div>
+      </div>
+    </div>
+  </div>
+</section>
