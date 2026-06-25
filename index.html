@@ -266,6 +266,59 @@ a { color: inherit; }
 .fim-wrap{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:18px}
 .fim-team{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:6px}
 .fim-tag{font-size:16px;font-weight:700;padding:9px 18px;border-radius:12px;background:var(--paper2);color:var(--muted);letter-spacing:.1px}
+
+/* ===== IMPRESSÃO ===== */
+@media print {
+  /* Página A4 paisagem sem margens — slides preenchem inteiro */
+  @page { size: A4 landscape; margin: 0; }
+
+  /* Garante impressão fiel de cores e fundos */
+  * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+
+  /* Reseta o layout de tela cheia */
+  html, body { height: auto; overflow: visible; background: #fff; }
+  #pres  { position: static; height: auto; }
+  #viewport { position: static; display: block; height: auto; }
+
+  /* Remove o transform do JS e escala 1280px → ~1122px (A4 landscape @ 96dpi) */
+  #scaler {
+    position: static;
+    transform: none !important;
+    box-shadow: none;
+    overflow: visible;
+    zoom: 0.877;
+  }
+
+  #slides-host { position: static; }
+
+  /* Esconde elementos de navegação */
+  .chrome, .ob-cta, .notes-bar, .toc-panel, .toc-toggle, #lightbox {
+    display: none !important;
+  }
+
+  /* Cada slide vira um bloco no fluxo do documento */
+  .slide {
+    position: relative !important;
+    display: flex !important;
+    inset: auto !important;
+    animation: none !important;
+    height: auto;
+    min-height: 720px;   /* slides normais ficam na altura do design */
+    break-after: page;
+    page-break-after: always;
+    overflow: visible !important;
+  }
+
+  .slide:last-child { break-after: auto; page-break-after: auto; }
+
+  /* Libera conteúdo oculto por scroll (slide 12 — user stories) */
+  div[style*="overflow-y:auto"] {
+    overflow: visible !important;
+    height: auto !important;
+    flex: none !important;
+    min-height: 0 !important;
+  }
+}
 </style>
 </head>
 <body>
