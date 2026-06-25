@@ -272,6 +272,12 @@ a { color: inherit; }
   /* Página A4 paisagem sem margens — slides preenchem inteiro */
   @page { size: A4 landscape; margin: 0; }
 
+  /* Página quadrada (297×297mm) para slides com mais conteúdo */
+  @page tall { size: 297mm 297mm; margin: 0; }
+
+  /* Slide 12 (user stories com scroll) usa página maior */
+  .slide:has(div[style*="overflow-y:auto"]) { page: tall; }
+
   /* Garante impressão fiel de cores e fundos */
   * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
 
